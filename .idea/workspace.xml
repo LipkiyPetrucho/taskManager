@@ -4,38 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="979bb90d-77e2-43fd-b0ff-81b25c6055c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/taskManager.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/task_manager/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/task_manager/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/task_manager/settings/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/task_manager/settings/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/task_manager/settings/local.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/task_manager/settings/prod.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/task_manager/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/task_manager/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/tasks/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/tasks/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/tasks/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/tasks/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/tasks/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/tasks/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/tasks/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/tasks/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_manager/wait-for-it.sh" afterDir="false" />
-    </list>
+    <list default="true" id="979bb90d-77e2-43fd-b0ff-81b25c6055c6" name="Changes" comment="failed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,11 +18,16 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="failed" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2nXCdGlYABjQUFjSaS64TD6oyyJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -69,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/django/taskManager/task_manager"
+    "last_opened_file_path": "D:/django/taskManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -100,5 +74,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="failed" />
+    <option name="LAST_COMMIT_MESSAGE" value="failed" />
   </component>
 </project>

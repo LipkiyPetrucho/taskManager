@@ -1,10 +1,16 @@
+import os
 from pathlib import Path
+from dotenv import load_dotenv
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = "django-insecure-xehf-2kt(vdkl637+52lwge(%2=uxe-=8s-cu-e39_c$kbgkpv"
+load_dotenv(os.path.join(BASE_DIR, '.env'))
 
-ALLOWED_HOSTS = []
+DEBUG = True
+
+SECRET_KEY = os.getenv("SECRET_KEY")
+
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",")
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -15,7 +21,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "drf_yasg",
-    "tasks",
+    "tasks.apps.TasksConfig",
 ]
 
 MIDDLEWARE = [
@@ -46,6 +52,17 @@ TEMPLATES = [
     },
 ]
 
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "HOST": os.getenv("POSTGRES_DB_HOST", "db"),
+        "NAME": os.getenv("POSTGRES_DB_NAME"),
+        "USER": os.getenv("POSTGRES_DB_USER"),
+        "PASSWORD": os.getenv("POSTGRES_DB_PASSWORD"),
+        "PORT": 5432,
+    }
+}
+
 WSGI_APPLICATION = "task_manager.wsgi.application"
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -71,6 +88,21 @@ USE_I18N = True
 
 USE_TZ = True
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console':{
+            'class':'logging.StreamHandler',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'INFO',
+    },
+}

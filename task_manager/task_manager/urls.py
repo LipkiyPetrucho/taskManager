@@ -7,10 +7,6 @@ from rest_framework import routers, permissions
 
 from tasks.views import TaskViewSet
 
-# from rest_framework.schemas import openapi
-
-# from rest_framework.schemas import get_schema_view
-
 router = routers.DefaultRouter()
 router.register(r"tasks", TaskViewSet)
 
